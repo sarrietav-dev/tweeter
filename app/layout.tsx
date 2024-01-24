@@ -8,7 +8,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 const poppins = Poppins({ display: "swap", weight: ["500", "600"], subsets: ["latin"], variable: '--font-poppins' })
-const notoSans = Noto_Sans({ display: "swap", weight: ["500", "600"], subsets: ["latin"], variable: '--font-noto' })
+const notoSans = Noto_Sans({ display: "swap", weight: ["300", "400", "500", "600"], subsets: ["latin"], variable: '--font-noto' })
 
 export const metadata: Metadata = {
   title: "Tweeter",
