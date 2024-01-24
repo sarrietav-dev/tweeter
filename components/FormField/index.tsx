@@ -14,7 +14,7 @@ export default function TextFormField({ icon, label, type, name, }: TextFormFiel
   return (
     <div className="relative">
       {icon && <FontAwesomeIcon icon={icon} size='xl' height={100} className="absolute inset-y-3 left-3 text-gray-500" />}
-      <input type={type} name={name} id={name} placeholder={label} className='size-full px-12 py-3' />
+      <input type={type} name={name} id={name} placeholder={label} className='size-full px-12 py-3 border border-stone-300 rounded-md font-noto placeholder:font-light' />
     </div>
   )
 }
