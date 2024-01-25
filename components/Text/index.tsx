@@ -17,7 +17,7 @@ export default function Text({ children, type, className }: TextProps) {
 
   if (type === "paragraph") {
     const classes = clsx(
-      "text-gray-300",
+      "text-zinc-800 text-sm font-normal",
       className
     )
 
