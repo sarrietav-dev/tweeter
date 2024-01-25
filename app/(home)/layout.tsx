@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans, Poppins } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import clsx from "clsx";
 import Nav from "../components/Nav";
 import "@fortawesome/fontawesome-svg-core/styles.css";
