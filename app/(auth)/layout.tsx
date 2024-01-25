@@ -26,9 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={fonts}>
         <Nav />
-        <main className="grow flex flex-col justify-center">
+        <main className="mt-5">
           {children}
-      </main>
+        </main>
       </body>
     </html>
   );
