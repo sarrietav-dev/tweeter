@@ -1,19 +1,34 @@
+import clsx from "clsx";
+
 interface TextProps {
-  children: string;
+  children: React.ReactNode;
   type: "heading" | "paragraph" | "secondary";
   className?: string;
 }
 
 export default function Text({ children, type, className }: TextProps) {
   if (type === "heading") {
-    return <h1 className={className}>{children}</h1>;
+    const classes = clsx(
+      "text-lg font-semibold text-gray-300",
+      className
+    )
+    return <h1 className={classes}>{children}</h1>;
   }
 
   if (type === "paragraph") {
-    return <p className={className}>{children}</p>;
+    const classes = clsx(
+      "text-gray-300",
+      className
+    )
+
+    return <p className={classes}>{children}</p>;
   }
 
   if (type === "secondary") {
-    return <p className={className}>{children}</p>;
+    const classes = clsx(
+      "text-gray-400 text-sm",
+      className
+    )
+    return <p className={classes}>{children}</p>;
   }
 }
