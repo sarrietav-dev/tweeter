@@ -12,7 +12,7 @@ interface ButtonProps {
 
 export default function Button({ label, type, icon, onClick, className }: ButtonProps) {
   const classes = clsx(
-    'bg-blue-500 w-full px-5 py-2 text-white rounded-lg',
+    'w-full rounded-lg bg-blue-500 px-5 py-2 text-white',
     className
   )
 

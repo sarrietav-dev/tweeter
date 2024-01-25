@@ -6,9 +6,9 @@ import RegisterForm from './form'
 
 export default function RegisterPage() {
   return (
-    <div className='px-5 flex flex-col gap-5'>
+    <div className='flex flex-col gap-5 px-5'>
       <div className='space-y-3'>
-        <Text type='heading' className='font-semibold text-lg'>
+        <Text type='heading' className='text-lg font-semibold'>
           Join Tweeter today.
         </Text>
         <Text type='paragraph'>

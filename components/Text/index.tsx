@@ -9,7 +9,7 @@ interface TextProps {
 export default function Text({ children, type, className }: TextProps) {
   if (type === "heading") {
     const classes = clsx(
-      "text-lg font-semibold text-zinc-800 font-poppins",
+      "font-poppins  text-lg font-semibold text-zinc-800",
       className
     )
     return <h1 className={classes}>{children}</h1>;
@@ -17,7 +17,7 @@ export default function Text({ children, type, className }: TextProps) {
 
   if (type === "paragraph") {
     const classes = clsx(
-      "text-zinc-800 text-sm font-normal",
+      "text-sm font-normal text-zinc-800",
       className
     )
 
@@ -26,7 +26,7 @@ export default function Text({ children, type, className }: TextProps) {
 
   if (type === "secondary") {
     const classes = clsx(
-      "text-gray-400 text-sm",
+      "text-sm text-gray-400",
       className
     )
     return <p className={classes}>{children}</p>;

@@ -6,9 +6,9 @@ import LoginForm from './form'
 
 export default function LoginPage() {
   return (
-    <div className='px-5 flex flex-col gap-5'>
+    <div className='flex flex-col gap-5 px-5'>
       <div>
-        <Text type='heading' className='font-semibold text-lg'>
+        <Text type='heading' className='text-lg font-semibold'>
           Login
         </Text>
       </div>
