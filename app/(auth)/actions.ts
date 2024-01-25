@@ -32,7 +32,7 @@ const registerSchema = z.object({
   passwordConfirmation: z.string().min(8)
 })
 
-export async function register(formData: FormData) {
+export async function register(prevState: any, formData: FormData) {
   const validatedFields = registerSchema.safeParse({
     email: formData.get("email"),
     name: formData.get("name"),
@@ -47,7 +47,16 @@ export async function register(formData: FormData) {
     }
   }
 
-  const { email, name, password } = validatedFields.data
+  const { email, name, password, passwordConfirmation } = validatedFields.data
+
+  if (password !== passwordConfirmation) {
+    return {
+      success: false,
+      errors: {
+        passwordConfirmation: ["Password confirmation doesn't match"]
+      }
+    }
+  }
 
   console.log(`Register with email: ${email}, name: ${name} and password: ${password}`)
 }

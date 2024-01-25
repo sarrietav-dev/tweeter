@@ -1,11 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLock, faPerson } from '@fortawesome/free-solid-svg-icons'
 import { faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons'
 import Link from '@/components/Link'
-import Button from '@/components/Button'
-import TextFormField from '@/components/FormField'
 import IconButton from '@/components/IconButton'
 import Text from '@/components/Text'
+import RegisterForm from './form'
 
 export default function RegisterPage() {
   return (
@@ -19,12 +16,7 @@ export default function RegisterPage() {
         </Text>
       </div>
 
-      <form className='flex flex-col gap-3'>
-        <TextFormField icon={faPerson} label='Your name' type='text' name='name' />
-        <TextFormField icon={faEnvelope} label='Email' type='email' name='email' />
-        <TextFormField icon={faLock} label='Password' type='password' name='password' />
-        <Button label='Join' type='submit' />
-      </form>
+      <RegisterForm />
 
       <div className='space-y-3'>
         <Text type='secondary' className='text-center'>Or continue with this social profiles</Text>
