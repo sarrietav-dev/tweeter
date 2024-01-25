@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={fonts}>
         <Nav />
-        <main className="mt-5">
+        <main className="mt-5 max-w-lg self-center">
           {children}
         </main>
       </body>
