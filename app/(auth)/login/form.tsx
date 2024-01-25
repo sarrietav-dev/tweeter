@@ -18,8 +18,8 @@ export default function LoginForm() {
 
   return (
     <form action={formAction} className='flex flex-col gap-3'>
-      <TextFormField icon={faEnvelope} label='Email' type='email' name='email' />
-      <TextFormField icon={faLock} label='Password' type='password' name='password' />
+      <TextFormField required icon={faEnvelope} label='Email' type='email' name='email' />
+      <TextFormField required minLength={8} icon={faLock} label='Password' type='password' name='password' />
       {
         !state?.success && (
           <p>

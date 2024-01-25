@@ -16,10 +16,10 @@ export default function RegisterForm() {
 
   return (
     <form action={formAction} className='flex flex-col gap-3'>
-      <TextFormField icon={faPerson} label='Your name' type='text' name='name' />
-      <TextFormField icon={faEnvelope} label='Email' type='email' name='email' />
-      <TextFormField icon={faLock} label='Password' type='password' name='password' />
-      <TextFormField icon={faLock} label='Validate your password' type='password' name='password-confirmation' />
+      <TextFormField required min={3} icon={faPerson} label='Your name' type='text' name='name' />
+      <TextFormField required icon={faEnvelope} label='Email' type='email' name='email' />
+      <TextFormField required min={8} icon={faLock} label='Password' type='password' name='password' />
+      <TextFormField required min={8} icon={faLock} label='Validate your password' type='password' name='password-confirmation' />
       {
         !state?.success && (
           <p>
