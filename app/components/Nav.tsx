@@ -12,7 +12,7 @@ export default function Nav() {
   const pathname = usePathname()
 
   return (
-    <nav className="flex h-16 items-center justify-between px-5 py-1">
+    <nav className="flex h-16 items-center justify-between bg-white px-5 py-1">
       <div>
         <Image src="/tweeter.svg" className="hidden md:block" alt="Tweeter" width={150} height={30} />
         <Image src="/tweeter-small.svg" className="block md:hidden" alt="Tweeter" width={50} height={30} />

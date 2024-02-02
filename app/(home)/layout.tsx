@@ -21,15 +21,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const fonts = clsx(poppins.variable, notoSans.variable, "font-noto")
+  const bodyClasses = clsx(poppins.variable, notoSans.variable, "font-noto", "bg-zinc-100")
 
   return (
     <html lang="en">
-      <body className={fonts}>
+      <body className={bodyClasses}>
         <Nav />
-        <main className="bg-zinc-100">
-          {children}
-        </main>
+        {children}
         <Tabs />
       </body>
     </html>

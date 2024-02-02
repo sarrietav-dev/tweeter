@@ -21,7 +21,7 @@ export default function Tabs() {
   }]
 
   return (
-    <div className="fixed inset-x-0 bottom-0 flex h-16 w-full justify-around border-b sm:hidden">
+    <div className="fixed inset-x-0 bottom-0 flex h-16 w-full justify-around border-b bg-white sm:hidden">
       {routes.map(({ href, icon }) => (
         <TabItem key={href}
           href={href}
