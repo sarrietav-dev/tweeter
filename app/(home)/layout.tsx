@@ -27,7 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={fonts}>
         <Nav />
-        {children}
+        <main className="bg-zinc-100">
+          {children}
+        </main>
         <Tabs />
       </body>
     </html>
