@@ -1,5 +1,6 @@
 "use client"
 
+import Avatar from "@/components/Avatar";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
@@ -23,7 +24,7 @@ export default function Nav() {
         <NavItem active={pathname == "/bookmarks"} href="/bookmarks">Bookmarks</NavItem>
       </div>
       <div className="flex items-center justify-center gap-2">
-        <Image src="https://i.pravatar.cc/32?u=xanthe-neaL" className="rounded-lg" alt="Profile" width={32} height={32} />
+        <Avatar size="sm" />
         <p className="hidden text-xs font-bold sm:block">
           Xanthe Neal
         </p>
