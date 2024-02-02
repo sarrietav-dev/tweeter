@@ -15,7 +15,7 @@ export default function NewTweetForm() {
   }
 
   return (
-    <div className="rounded-md bg-white p-3">
+    <div className="rounded-md bg-white p-3 md:rounded-xl">
       <p className="font-poppins text-xs font-semibold text-gray-2">Tweet something</p>
       <hr className="my-2" />
       <form>
