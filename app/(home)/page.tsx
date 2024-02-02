@@ -15,7 +15,7 @@ export default function Home() {
   }
 
   return (
-    <main className="p-4">
+    <main className="container mx-auto p-4">
       <div className="rounded-md bg-white p-3">
         <p className="font-poppins text-xs font-semibold text-gray-2">Tweet something</p>
         <hr className="my-2" />
@@ -31,7 +31,7 @@ export default function Home() {
             ></textarea>
           </div>
           <div className="flex items-center justify-between">
-            <div className="space-x-3">
+            <div className="space-x-3 sm:ml-14">
               <button type="button" className="rounded p-1 text-blue-500 transition active:bg-gray-100">
                 <FontAwesomeIcon icon={faImage} size="lg" />
               </button>
@@ -42,7 +42,7 @@ export default function Home() {
                 </span>
               </button>
             </div>
-            <button type="submit" className="rounded bg-blue-500 px-7 py-2.5 text-xs text-white">
+            <button type="submit" className="rounded bg-blue-500 px-7 py-2.5 text-xs text-white transition active:bg-blue-600">
               Tweet
             </button>
           </div>

@@ -21,7 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const bodyClasses = clsx(poppins.variable, notoSans.variable, "font-noto", "bg-zinc-100")
+  const bodyClasses = clsx(poppins.variable, notoSans.variable, "font-noto", "bg-zinc-100", "min-w-[360px]")
 
   return (
     <html lang="en">
