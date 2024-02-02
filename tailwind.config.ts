@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         poppins: ['var(--font-poppins)'],
         noto: ['var(--font-noto)'],
+      },
+      colors: {
+        "gray-3": "#828282"
       }
     }
   },
