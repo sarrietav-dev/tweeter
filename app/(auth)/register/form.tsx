@@ -1,7 +1,7 @@
 "use client"
 
-import Button from "@/components/Button"
-import TextFormField from "@/components/FormField"
+import Button from "@/components/shared/Button"
+import TextFormField from "@/components/shared/FormField"
 import { faPerson, faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons"
 import { useFormState } from "react-dom"
 import { register } from "../actions"

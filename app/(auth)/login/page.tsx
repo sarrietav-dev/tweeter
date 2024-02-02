@@ -1,7 +1,7 @@
 import { faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons'
-import Link from '@/components/Link'
-import IconButton from '@/components/IconButton'
-import Text from '@/components/Text'
+import Link from '@/components/shared/Link'
+import IconButton from '@/components/shared/IconButton'
+import Text from '@/components/shared/Text'
 import LoginForm from './form'
 
 export default function LoginPage() {

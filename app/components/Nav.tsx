@@ -1,6 +1,6 @@
 "use client"
 
-import Avatar from "@/components/Avatar";
+import Avatar from "@/components/shared/Avatar";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
