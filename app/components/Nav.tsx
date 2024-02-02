@@ -1,5 +1,7 @@
 "use client"
 
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,9 +22,14 @@ export default function Nav() {
         <NavItem active={pathname == "/explore"} href="/explore">Explore</NavItem>
         <NavItem active={pathname == "/bookmarks"} href="/bookmarks">Bookmarks</NavItem>
       </div>
-      <div>
-        <Link href="/profile">Profile</Link>
-        <Link href="/more">More</Link>
+      <div className="flex items-center justify-center gap-2">
+        <Image src="https://i.pravatar.cc/32?u=xanthe-neaL" className="rounded-lg" alt="Profile" width={32} height={32} />
+        <p className="hidden text-xs font-bold sm:block">
+          Xanthe Neal
+        </p>
+        <div className="hidden sm:block">
+          <FontAwesomeIcon icon={faChevronDown} size="sm" />
+        </div>
       </div>
     </nav>
   )
