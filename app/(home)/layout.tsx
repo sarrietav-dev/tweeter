@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Nav from "../components/Nav";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Tabs from "../components/Tabs";
 config.autoAddCss = false;
 
 const poppins = Poppins({ display: "swap", weight: ["500", "600"], subsets: ["latin"], variable: '--font-poppins' })
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={fonts}>
         <Nav />
         {children}
+        <Tabs />
       </body>
     </html>
   );
