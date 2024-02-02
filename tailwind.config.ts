@@ -13,7 +13,9 @@ const config: Config = {
         noto: ['var(--font-noto)'],
       },
       colors: {
-        "gray-3": "#828282"
+        "gray-2": "#4F4F4F",
+        "gray-3": "#828282",
+        "gray-4": "#BDBDBD"
       }
     }
   },
