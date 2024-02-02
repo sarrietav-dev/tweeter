@@ -1,16 +1,15 @@
 
 import NewTweetForm from "@/components/home/NewTweetForm";
 import Avatar from "@/components/shared/Avatar";
-import { faBookmark, faComment, faHeart, faRetweet } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MdBookmarkBorder, MdOutlineModeComment, MdFavoriteBorder, MdLoop } from "react-icons/md"
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="container mx-auto p-4">
       <NewTweetForm />
-      <p className="my-2 text-sm text-gray-3">
-        <FontAwesomeIcon icon={faRetweet} /> Daniel Nelsen retweeted
+      <p className="my-2 flex items-center gap-1 text-sm text-gray-3">
+        <MdLoop className="inline-block text-lg" /> Daniel Nelsen retweeted
       </p>
       <article className="rounded bg-white p-4 shadow-sm">
         <header className="flex items-center gap-3">
@@ -35,17 +34,17 @@ export default function Home() {
             </p>
           </div>
           <div className="my-2 flex justify-around border-y py-1">
-            <button className="rounded px-5 py-2 transition hover:bg-zinc-100">
-              <FontAwesomeIcon icon={faComment} size="lg" />
+            <button className="rounded px-5 py-2 transition active:bg-zinc-100">
+              <MdOutlineModeComment className="text-xl text-gray-2" />
             </button>
-            <button className="rounded px-5 py-2 transition hover:bg-zinc-100">
-              <FontAwesomeIcon icon={faRetweet} size="lg" />
+            <button className="rounded px-5 py-2 transition active:bg-zinc-100">
+              <MdLoop className="text-xl text-gray-2" />
             </button>
-            <button className="rounded px-5 py-2 transition hover:bg-zinc-100">
-              <FontAwesomeIcon icon={faHeart} size="lg" />
+            <button className="rounded px-5 py-2 transition active:bg-zinc-100">
+              <MdFavoriteBorder className="text-xl text-gray-2" />
             </button>
-            <button className="rounded px-5 py-2 transition hover:bg-zinc-100">
-              <FontAwesomeIcon icon={faBookmark} size="lg" />
+            <button className="rounded px-5 py-2 transition active:bg-zinc-100">
+              <MdBookmarkBorder className="text-xl text-gray-2" />
             </button>
           </div>
           <form className="flex items-center gap-4">
