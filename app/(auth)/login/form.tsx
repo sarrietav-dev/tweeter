@@ -2,7 +2,7 @@
 
 import Button from "@/components/shared/Button";
 import TextFormField from "@/components/shared/FormField";
-import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
+import { MdMail, MdLock } from "react-icons/md";
 import { useFormState } from "react-dom";
 import { login } from "../actions";
 
@@ -18,8 +18,8 @@ export default function LoginForm() {
 
   return (
     <form action={formAction} className='flex flex-col gap-3'>
-      <TextFormField required icon={faEnvelope} label='Email' type='email' name='email' />
-      <TextFormField required minLength={8} icon={faLock} label='Password' type='password' name='password' />
+      <TextFormField required icon={MdMail} label='Email' type='email' name='email' />
+      <TextFormField required minLength={8} icon={MdLock} label='Password' type='password' name='password' />
       {
         !state?.success && (
           <p>

@@ -2,7 +2,7 @@
 
 import Button from "@/components/shared/Button"
 import TextFormField from "@/components/shared/FormField"
-import { faPerson, faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons"
+import { MdAccountCircle, MdMail, MdLock } from "react-icons/md"
 import { useFormState } from "react-dom"
 import { register } from "../actions"
 
@@ -16,10 +16,10 @@ export default function RegisterForm() {
 
   return (
     <form action={formAction} className='flex flex-col gap-3'>
-      <TextFormField required min={3} icon={faPerson} label='Your name' type='text' name='name' />
-      <TextFormField required icon={faEnvelope} label='Email' type='email' name='email' />
-      <TextFormField required min={8} icon={faLock} label='Password' type='password' name='password' />
-      <TextFormField required min={8} icon={faLock} label='Validate your password' type='password' name='password-confirmation' />
+      <TextFormField required min={3} icon={MdAccountCircle} label='Your name' type='text' name='name' />
+      <TextFormField required icon={MdMail} label='Email' type='email' name='email' />
+      <TextFormField required min={8} icon={MdLock} label='Password' type='password' name='password' />
+      <TextFormField required min={8} icon={MdLock} label='Validate your password' type='password' name='password-confirmation' />
       {
         !state?.success && (
           <p>

@@ -2,7 +2,7 @@
 
 import Avatar from "@/components/shared/Avatar";
 import { faImage, faEarth } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MdOutlineImage, MdOutlinePublic } from "react-icons/md";
 import { useRef } from "react";
 
 export default function NewTweetForm() {
@@ -30,18 +30,18 @@ export default function NewTweetForm() {
           ></textarea>
         </div>
         <div className="flex items-center justify-between">
-          <div className="space-x-3 sm:ml-14">
+          <div className="flex items-center sm:ml-14">
             <button type="button" className="rounded p-1 text-blue-500 transition active:bg-gray-100">
-              <FontAwesomeIcon icon={faImage} size="lg" />
+              <MdOutlineImage size={20} />
             </button>
-            <button type="button" className="rounded p-1 text-blue-500 transition active:bg-gray-100">
-              <FontAwesomeIcon icon={faEarth} size="lg" />
-              <span className="ml-2 text-sm">
+            <button type="button" className="flex items-center rounded p-1 text-blue-500 transition active:bg-gray-100">
+              <MdOutlinePublic size={20} className="inline-block" />
+              <span className="ml-2 text-sm font-medium">
                 Everyone can reply
               </span>
             </button>
           </div>
-          <button type="submit" className="rounded bg-blue-500 px-7 py-2.5 text-xs text-white transition active:bg-blue-600">
+          <button type="submit" className="rounded bg-blue-500 px-7 py-2.5 text-xs font-medium text-white transition active:bg-blue-600">
             Tweet
           </button>
         </div>

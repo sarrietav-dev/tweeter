@@ -1,8 +1,8 @@
-import { faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons'
 import Link from '@/components/shared/Link'
 import IconButton from '@/components/shared/IconButton'
 import Text from '@/components/shared/Text'
 import RegisterForm from './form'
+import { FaGithub, FaGoogle } from 'react-icons/fa6'
 
 export default function RegisterPage() {
   return (
@@ -21,8 +21,8 @@ export default function RegisterPage() {
       <div className='space-y-3'>
         <Text type='secondary' className='text-center'>Or continue with this social profiles</Text>
         <div className='flex items-center justify-evenly'>
-          <IconButton type='submit' icon={faGoogle} />
-          <IconButton type='submit' icon={faGithub} />
+          <IconButton type='submit' icon={FaGoogle} />
+          <IconButton type='submit' icon={FaGithub} />
         </div>
       </div>
 

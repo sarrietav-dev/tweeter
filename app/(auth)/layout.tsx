@@ -3,9 +3,6 @@ import { Noto_Sans, Poppins } from "next/font/google";
 import "../globals.css";
 import clsx from "clsx";
 import Nav from "../../components/layout/Nav";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 
 const poppins = Poppins({ display: "swap", weight: ["500", "600"], subsets: ["latin"], variable: '--font-poppins' })
 const notoSans = Noto_Sans({ display: "swap", weight: ["300", "400", "500", "600"], subsets: ["latin"], variable: '--font-noto' })
