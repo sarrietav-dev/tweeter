@@ -1,7 +1,6 @@
 "use client";
 
 import Avatar from "@/components/shared/Avatar";
-import { faImage, faEarth } from "@fortawesome/free-solid-svg-icons";
 import { MdOutlineImage, MdOutlinePublic } from "react-icons/md";
 import { useRef } from "react";
 
