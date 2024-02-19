@@ -1,7 +1,7 @@
 
 import NewTweetForm from "@/components/home/NewTweetForm";
 import Avatar from "@/components/shared/Avatar";
-import { MdBookmarkBorder, MdOutlineModeComment, MdFavoriteBorder, MdLoop } from "react-icons/md"
+import { MdBookmarkBorder, MdOutlineModeComment, MdFavoriteBorder, MdLoop, MdOutlineImage } from "react-icons/md"
 import Image from "next/image";
 
 export default function Home() {
@@ -49,12 +49,15 @@ export default function Home() {
           </div>
           <form className="flex items-center gap-4">
             <Avatar />
-            <div className="grow">
+            <div className="relative grow">
               <input
                 type="text"
                 placeholder="Tweet your reply"
                 className="w-full rounded-lg border border-zinc-100 bg-zinc-50 placeholder:text-sm placeholder:text-stone-300 focus:outline-none focus:ring-0"
               />
+              <button type="button" className="group absolute inset-y-0 right-3">
+                <MdOutlineImage className="rounded p-1 text-3xl text-stone-300 transition group-active:bg-gray-100" />
+              </button>
             </div>
           </form>
         </footer>
