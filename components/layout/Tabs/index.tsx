@@ -38,7 +38,7 @@ function TabItem({ icon: Icon, active, href }: { icon: IconType, active?: boolea
   return (
     <div className="flex h-full w-16 flex-col">
       <Link href={href} className="group flex h-full w-16 flex-col items-center justify-center">
-        <div className="flex w-full justify-center rounded p-1 text-center transition group-active:bg-gray-200">
+        <div className="flex w-full justify-center rounded p-1 transition group-active:bg-gray-200">
           <Icon className={fontAwesomeClasses} size={24} />
         </div>
       </Link>
